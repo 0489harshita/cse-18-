@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable,object,</title>
+</head>
+<body>
+    <script>
+        //JS variable data value types 
+        //primitive: immutable single alue and stores in emory
+
+        //strings===
+        var myName="Harshita sharma ";
+        console.log("my name is " +myName);
+        console.log(typeof(myName));
+
+        //Number
+        var myMob=8791264974
+        console.log(" my Mobile no. is " + myMob);
+        console.log(typeof(myMob));
+
+        //boolean
+        var isMarried=true;
+        console.log(myName + " is Married?" +isMarried);
+        console.log(typeof(isMarried));
+
+        //undefined
+        var myAdd;
+        console.log(myName + " address is " +myAdd);
+        console.log(typeof(myAdd));
+
+        //null
+        var myEmail=null;
+        console.log(myName +"e-mail address is " + myEmail);
+        console.log(typeof(myEmail));
+
+        //bigint
+        var myValue=BigInt(234657656887534857998454);
+        console.log( myValue);
+        console.log(typeof(myValue));
+        //symbol- unique primitie data Value type in JS
+        var val1=Symbol("Hello");
+        var val2=Symbol("Hello");
+        console.log(val1=val2);
+        console.log(typeof(val1) + "and" + typeof(val2));
+
+        //Reference or Non-primitive Data Value Types========= 
+        //objet {}- values are defined in pair of key-value
+        let myInfo={
+            name="Harshita sharma",
+            age:18,
+            mob: 8791264974,
+            eMail:"harshitaksharma2007@gmail.com",
+            isMarried:false,
+            address:null,
+            branch:" CSE",
+            section:18
+           };
+        console.log(myInfo);
+        //to find the length of object
+        console.log(object.keys(myInfo).length);
+        console.log(myInfo.branch);
+        //array-collection of any data types in JS
+        let studentDetails=[
+            "Megha",
+            24,
+            false,
+            "megha1990@gmail.com",
+            "6ZB"];
+            console.log(studentDetails[2]);
+            console.log(studentDetails.length);
+
+           for(i=0;i<studentDetails.length;i++){
+              console.log(studentDetails[i]);
+           }
+
+           
+    </script>
+</body>
+</html>
+
